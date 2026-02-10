@@ -92,12 +92,15 @@ try:
                     old_name = old_name.lower()
                     if old_name in phone_book:
                         new_name = input('Enter new name: ')
-                        new_name = new_name.lower()
-                        phone=phone_book[old_name]
-                        swapped_phone_book[phone] = new_name
-                        del phone_book[old_name]
-                        phone_book[new_name] = phone
-                        print('Contact updated successfully')
+                        if new_name not in phone_book:
+                            new_name = new_name.lower()
+                            phone=phone_book[old_name]
+                            swapped_phone_book[phone] = new_name
+                            del phone_book[old_name]
+                            phone_book[new_name] = phone
+                            print('Contact updated successfully')
+                        else:
+                            print('Name is Existed')
                     else:
                         print('Contact not found')
                         continue
@@ -107,13 +110,18 @@ try:
                     old_phone = input('Enter old phone number: ')
                     new_phone = input('Enter new phone number: ')
                     if (len(old_phone) == 10 and old_phone.isdigit()) and (len(new_phone)==10 and new_phone.isdigit()==True)==True:
-                        if old_phone in swapped_phone_book:
-                            nam=swapped_phone_book[old_phone]
-                            phone_book[nam]=new_phone
-                            del swapped_phone_book[old_phone]
-                            swapped_phone_book[new_phone] = nam
+                        if new_phone not in swapped_phone_book:
+                            if old_phone in swapped_phone_book:
+                                nam=swapped_phone_book[old_phone]
+                                phone_book[nam]=new_phone
+                                del swapped_phone_book[old_phone]
+                                swapped_phone_book[new_phone] = nam
+                                print('Contact updated successfully')
+                            else:
+                                print('Contact not found')
+                                continue
                         else:
-                            print('Contact not found')
+                            print('Phone number is Existed')
                             continue
                     else:
                         print('Invalid phone number')
