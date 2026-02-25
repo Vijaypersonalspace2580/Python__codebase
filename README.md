@@ -1,72 +1,29 @@
-\# 🎓 Student Management System (Python)
+# 🎓 Student Management System (Python)
 
+A console-based Student Management System built using Python.  
+This project demonstrates CRUD (Create, Read, Update, Delete) operations using CSV file handling, dictionaries, and input validation.
 
+## 🔹 Features
 
-A console-based Student Management System built using Python and CSV file handling.
+- Add student records
+- View student records
+- Search student by roll number
+- Update student details
+- Delete specific student
+- Delete all records
+- Calculate average marks
+- Automatic CSV file generation
 
+## 🛠 Technologies Used
 
+- Python
+- CSV module
+- File handling
+- Dictionaries
 
-\## 📌 Features
+## 🚀 How to Run
 
-
-
-\- Add student record
-
-\- View student records
-
-\- Search student by roll number
-
-\- Update student details
-
-\- Delete student record
-
-\- Calculate average marks
-
-\- Automatic CSV file creation
-
-
-
-\## 🛠 Technologies Used
-
-
-
-\- Python
-
-\- CSV module
-
-\- File handling
-
-\- Dictionary data structure
-
-
-
-\## 🚀 How to Run
-
-
-
-1\. Install Python
-
-2\. Run the file:
-
-
-
-&nbsp;  python student\_management\_system.py
-
-
-
-\## 📂 Project Structure
-
-
-
-student\_management\_system.py  
-
-marks.csv (auto-generated)
-
-
-
----
-
-
-
-Developed by Vijay 🚀
-
+1. Download or clone the repository  
+2. Make sure Python is installed  
+3. Open terminal / command prompt  
+4. Run:
