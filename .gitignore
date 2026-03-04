@@ -1,4 +1,15 @@
+# Python cache files
 __pycache__/
 *.pyc
+
+# CSV data files
+user.csv
+budget.csv
+expenses.csv
+
+# IDE files
 .vs/
-marks.csv
+.vscode/
+
+# System files
+.DS_Store
