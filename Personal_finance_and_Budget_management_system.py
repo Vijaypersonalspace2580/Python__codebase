@@ -57,11 +57,9 @@ def login_account():
         else:
             print("Invalid Password")
             ask()
-            return None
     else:
         print("Username not found")
         ask()
-        return None
 def ask():
     try:
         choice = str(input("Are you want to create a new account?(yes/no):"))
@@ -200,7 +198,7 @@ while True:
             print("Saved successfully")
             break
         else:
-            if current_username:
+            if login==1:
                 if choice == 3:
                     monthly_budget(current_username)
                 elif choice == 4:
